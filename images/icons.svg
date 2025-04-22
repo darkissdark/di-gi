@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="arrow-prev" viewBox="0 0 13 22">
+    <path
+      fill="currentColor"
+      fill-rule="evenodd"
+      d="m10.544 21.239-10.2-10.2L10.526.856l2.267 2.267-7.92 7.92 7.934 7.933-2.263 2.263Z"
+      clip-rule="evenodd"
+    />
+  </symbol>
+
+  <symbol id="arrow-next" viewBox="0 0 13 21">
+    <path
+      fill="currentColor"
+      fill-rule="evenodd"
+      d="m2.456.158 10.2 10.2L2.474 20.542.207 18.274l7.92-7.92L.193 2.421 2.456.158Z"
+      clip-rule="evenodd"
+    />
+  </symbol>
+</svg>
