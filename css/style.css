@@ -187,6 +187,10 @@ a {
     min-width: 200px;
     min-height: 50px;
 }
+.slide-button.middle{
+    min-width: 230px;
+    min-height: 60px;
+}
 .slider-prev-next{
     position: absolute;
     top: 50%;
@@ -214,6 +218,10 @@ a {
     font-weight: 400;
     margin-bottom: 64px;
     line-height: 1;
+}
+
+.section-title.mb-0{
+    margin-bottom: 0;
 }
 
 .section-p{
@@ -384,6 +392,16 @@ a {
     color: var(--brand-color);
 }
 
+.team-section .section-title {
+    color: #4A4A4A;
+}
+
+.team-image {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
 @media (max-width: 1024px) {
     .section-title {
         text-align: center;
@@ -410,6 +428,27 @@ a {
     .portfolio-hover .portfolio-icons {
         width: 33px;
         height: 33px;
+    }
+    .team-image{
+        max-width: 400px;
+        max-height: 380px;
+        margin-right: 60px;
+        width: 44%;
+    }
+    .team-information .hr{
+       margin: 12px 0 20px;
+    }
+    .team-text {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+    .team-section {
+        padding: 80px 0;
+    }
+    .team-section .section-title {
+        text-align: left;
+        margin: 20px 0 0;
     }
 }
 @media (min-width: 1024px) {
@@ -442,6 +481,22 @@ a {
     .portfolio-list {
         gap: 20px;
         justify-content: center;
+    }
+    .team-image{
+        max-width: 460px;
+        max-height: 420px;
+        margin-right: 100px;
+    }
+    .team-information .hr{
+       margin-bottom: 42px;
+    }
+    .team-text {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 40px;
+    }
+    .team-section {
+        padding: 50px 0 110px;
     }
 }
 @media (min-width: 769px) {
@@ -487,7 +542,7 @@ a {
     .owl-dots {
         bottom: 50px;
     }
-    .slide-button {
+    .sider-content .slide-button {
         margin-top: 30px;
     }
     .sider-content {
@@ -523,7 +578,7 @@ a {
     .owl-dots {
         bottom: 20px;
     }
-    .slide-button {
+    .sider-content .slide-button {
         display: none;
     }
     .sider-content {
@@ -539,7 +594,7 @@ a {
         font-size: 84px;
     }
 
-    .slide-button {
+    .sider-content .slide-button {
         margin-top: 10px;
     }
     .slider-arr-nav{
@@ -580,6 +635,27 @@ a {
 
 /* mobile to tablet */
 @media (min-width: 640px) and (max-width: 768px) {
+    .team-text {
+        font-size: 16px;
+    }
+    .team-image{ 
+        max-width: 240px;
+        max-height: 227px;
+    }
+    .team-section{
+        padding: 40px 0 108px;
+        position: relative;
+    }
+    .team-section .slide-button {
+        position: absolute;
+        bottom: 48px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .team-section .section-title {
+        font-size: 36px;
+        line-height: 38px;
+    }
     .service-item {
             width: calc(100% / 2);
         }
@@ -627,6 +703,32 @@ a {
     }
     .portfolio-wrapper .hr {
         margin: 0 0 40px;
+    }
+    .team-section > .flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .team-section .section-title {
+        text-align: center;
+        margin: 0;
+    }
+    .team-section .team-text {
+        margin-bottom: 56px;
+        line-height: 18px;
+    }
+    .team-section {
+        padding: 40px 0 53px;
+        margin: 0;
+    }
+    .team-section .hr {
+        margin: 20px 0 40px;
+    }
+    .team-section .team-image {
+        max-width: 518px;
+        max-height: unset;
+        margin: 0 0 46px;
+        width: 100%;
     }
 }
 @media (max-width: 320px) {
