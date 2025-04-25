@@ -1,14 +1,20 @@
 $(document).ready(function () {
-    var owl = $('.owl-carousel').owlCarousel({
-        items: 1    ,
+    const headOwl = $('#head-owl-slider').owlCarousel({
+        items: 1,
         loop: true,
         nav: false,
     });
     $('.slider-arr-nav.prev').click(function () {
-        owl.trigger('prev.owl.carousel');
+        headOwl.trigger('prev.owl.carousel');
     });
 
     $('.slider-arr-nav.next').click(function () {
-        owl.trigger('next.owl.carousel');
+        headOwl.trigger('next.owl.carousel');
+    });
+    
+    const reviewsCarousel = $('#reviewsCarousel').owlCarousel({
+        items: 1,
+        loop: true,
+        nav: false,
     });
 });
